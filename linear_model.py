@@ -7,9 +7,9 @@ import joblib
 print(tf.__version__)
 
 
-margen, costo_base = 1.5, 20.0  
+margen, costo_base = 1.5, 25.0  
 costo_produccion = np.linspace(10, 100, 200)
-precio_venta = margen * costo_produccion + costo_base + np.random.normal(0, 2, 200)  
+precio_venta = margen * costo_produccion + costo_base + np.random.normal(0, 3, 200)  
 
 
 pares = list(zip(costo_produccion, precio_venta))
