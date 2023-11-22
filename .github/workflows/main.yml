@@ -15,7 +15,7 @@ jobs:
       - name: helloword 
         run: echo Hello, world!
       - name: run model 
-        run: python linear-model.py
+        run: python linear_model.py
       - name: docker login
         env:
           DOCKER_USER: ${{secrets.DOCKER_USER}}
